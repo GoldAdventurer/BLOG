@@ -1,0 +1,289 @@
+body {
+    font-family: sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    background-color: #ddd;
+    color: #888;
+    margin: 0;
+    height: 50px;
+}
+
+hr {
+  border: 2px solid #7d97ad;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
+}
+
+.hr {
+  margin: 3em 0 1em 0;
+  width: 100%;
+  height: 3em;
+}
+
+
+.body, .header, .header__title, .header__subtitle, footer {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.content_author {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-weight: bold;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header__inner {
+  width: 100%;
+  display: flex;
+}
+
+.header__logo {
+  height: 2em;
+  margin-right: 0.5em;
+  vertical-align: top;
+  margin-top: 12px;
+  width: 15%;
+}
+
+.header__description {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__title, .header__subtitle {
+  margin: 0.25em 0.25em;
+  /*display: inline-block;*/
+  text-align: right;
+}
+
+.header__title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.header__subtitle {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.header__description {
+  order: 2;
+}
+
+.general_menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+}
+
+.menu_item{
+  width: 20%;
+  text-align: right;
+}
+/*
+*
+*
+*
+*/
+
+.button-wrapper {
+  display: block;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  border-radius: 3em;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  display: inline-block;
+  font-size: 0.5em;
+  padding: 1em 2em;
+  width: auto;
+}
+
+.cta-button {
+  background-color: #000;
+  color: #fff !important;
+  margin-top: 20px;
+  margin-right: 0;
+}
+
+.cta-button:hover {
+  background-color: #A9A9A9;
+}
+
+.content-post{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.post{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post100{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+}
+
+.buttons{
+    width: 20%;
+}
+
+.right_buttons{
+    margin-top: 50px;
+
+}
+.main-title {
+    display: block;
+    color: #222;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.error {
+    margin-left: 10px;
+    color: red;
+    width: 65%;
+    margin-bottom: 15px;
+}
+
+.category_header{
+    width: 15%;
+    margin-right: 20px;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.category_content{
+    width: 20%;
+}
+
+.wrapper{
+    display: flex;
+    flex: flex-wrap;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.group_of_thirds{
+  width: 100%;
+  display: flex;
+  flex-wrap: flex;
+}
+
+.third{
+  display: flex;
+  width: 33%;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+input[type=text]{
+    width: 100%;
+    font-size: 20px;
+    padding: 0px;
+}
+
+input[type=password]{
+    width: 100%;
+    font-size: 20px;
+    padding: 0px;
+}
+
+input[type=login_text]{
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 17px;
+    font-family: monospace;
+    margin-top: 1em;
+}
+
+input[type=submit] {
+    font-size: 24px;
+}
+
+hr {
+    border: None;
+    height: 3px;
+    width: 100%;
+    color:  #000;
+    background-color: #000;
+}
+
+.subject {
+    text-align: left;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 80%;
+}
+
+
+.date {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 12px;
+    color: gray;
+    width: 20%;
+}
+
+a {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.centered {
+  width: 100%;
+  text-align: center;
+}

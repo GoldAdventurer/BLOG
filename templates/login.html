@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<form method="post">
+		<div class="error">
+			{{msg}}
+		</div>
+		<div class="wrapper">
+			<div class="category_header">
+				Username
+			</div>
+			<div class="category_content">
+				<input type="login_text" name="username" value="{{username}}">
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="category_header">
+				Password
+			</div>
+
+			<div class="category_content">
+				<input type="password" name="password" value="{{password}}">
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="category_header">
+			</div>
+			<div class="error">
+				{{error_login}}
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="category_header">
+			</div>
+			<div class="category_content">
+				<input type="submit" />
+			</div>
+		</div>
+	</form>
+	<div>
+		<h2>If you have not signed up yet, please <a href = "/signup">sign up.</a><h2>
+	</div>
+{% endblock %}

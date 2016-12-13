@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog Assignment</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__logo">
+          <img src="/img/letter-39909.svg" alt="Logo">
+        </div>
+        <div class="header__description" id="header__description_container">
+          <div class="header__title">
+            <a href="/blog_my_posts"><h1>BLOG</h1></a>
+          </div>
+          <div class="header__subtitle">
+            <h4>Udacity Assignment</h4>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class = "general_menu">
+        {% if usernameHeader == "" %}
+      <div class = "menu_item">
+    		<a href='/login'>Login</a>
+      </div>
+      <div class = "menu_item">
+        <a href='/signup'>Signup</a>
+      </div>
+        {% endif %}
+    </div>
+
+    <div class = "general_menu">
+        {% if usernameHeader != "" %}
+    	<div class = "menu_item">
+        <a href='/logout'>Logout</a>
+    	</div>
+    	<div class = "menu_item">
+        <a href='/blog_newpost'>New Post</a>
+    	</div>
+      <div class = "menu_item">
+      </div>
+      <div class = "menu_item">
+      </div>
+      <div class = "menu_item">
+        {{usernameHeader}}
+      </div>
+        {% endif %}
+    </div>
+
+    <div class="hr">
+      <hr />
+    </div>
+
+	<body>
+    <main>
+
+		<a href="/blog_my_posts" class="main-title">BLOG</a>
+		<div id="content">
+		{% block content %}
+		{% endblock %}
+		</div>
+	<footer>
+    </footer>
+    </main>
+	</body>
+</html>

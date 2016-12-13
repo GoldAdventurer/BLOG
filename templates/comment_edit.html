@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Comments</h2>
+    <form method="post">
+
+    <div class="content-post">
+        <div class="post100">
+            <div class="header">
+                <div class="subject">{{p.subject}}</div>
+                <div class="date">{{p.last_modified.strftime("%b %d, %Y")}}</div>
+                <hr />
+            </div>
+            <div class="content">{{p.content}}</div>
+            <div class="content">{{p.author}}</div>
+            <hr />
+        </div>
+    </div>
+
+    <div class="category_header">Comment</div>
+    <div>
+        <textarea name='comment'>{{comment}}</textarea>
+    </div>
+
+    <div class = "centered error">
+        {{msg}}
+    </div>
+
+    <div class="group_of_thirds">
+        <div class="third">
+        <label>
+            {% if like=="on" %}
+            Like <input type="checkbox" name = "like" checked >
+            {% else %}
+            Like <input type="checkbox" name = "like" unchecked >
+            {% endif %}
+        </label>
+         </div>
+
+    <br />
+        <div class="third">
+    <input class ="cta-button" type = "submit" name = "button" value = "Submit">
+        </div>
+        <div class="third">
+    <input class ="cta-button" type = "submit" name = "button" value = "Return to Blogs">
+        </div>
+    </div>
+
+    </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="header">
+        <div class="subject">{{post.subject}}</div>
+        <div class="date">{{post.last_modified.strftime("%b %d, %Y")}}</div>
+        <hr>
+    </div>
+        <div class="content">{{post.content}}</div>
+
+{% endblock %}

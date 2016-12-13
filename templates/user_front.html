@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="post" action="/blog/edit/([0-9]+)">
+    <div class="error">{{msg}}</div>
+    {% for p in posts %}
+    <div class="content-post">
+        <div class="post">
+            <div class="header">
+                <div class="subject">{{p.subject}}</div>
+                <div class="date">{{p.last_modified.strftime("%b %d, %Y")}}</div>
+                <hr />
+            </div>
+            <div class="content">{{p.content}}</div>
+            <div class="content_author">{{p.author}}</div>
+
+        </div>
+        <div class="buttons">
+            <a href="/blog_edit/?postid={{(p.key().id())}}">Edit</a>
+            <a href="/blog_comment/?postid={{(p.key().id())}}">Comment</a>
+        </div>
+    </div>
+    {% endfor %}
+</form>
+
+
+{% endblock %}
