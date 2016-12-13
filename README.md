@@ -75,7 +75,7 @@ https://cloud.google.com/appengine/docs/python/quickstart#prerequisites
 
 **Author**
 
-Christine D. selected wrote the code for the html, css, and html pages.
+C. D. selected wrote the code for the html, css, and html pages.
 
 **License**
 
